@@ -18,7 +18,8 @@ load_dotenv(env_path)
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 DEFAULT_MODEL = "openai/gpt-3.5-turbo"
-
+SITE_URL = os.getenv("OPENROUTER_SITE_URL")
+SITE_NAME = os.getenv("OPENROUTER_SITE_NAME")
 if not OPENROUTER_API_KEY:
     raise RuntimeError(
         "❌ OPENROUTER_API_KEY environment variable is not set.\n"
